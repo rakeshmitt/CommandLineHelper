@@ -1,0 +1,11 @@
+
+Initial Setup
+==============
+
+git config --global user.name "username"
+git config --global user.email <<emailid>>  --- (double quotes are not required for email id)
+
+clonning a repository
+=====================
+git clone <<repository url>>
+

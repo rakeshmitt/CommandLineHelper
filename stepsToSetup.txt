@@ -9,3 +9,22 @@ clonning a repository
 =====================
 git clone <<repository url>>
 
+adding new file to repository
+============================
+git add <<file name>>
+
+verify the status
+================
+git status
+
+Commiting a file
+===============
+git commit -m "message for committing" <<file name>>
+
+Now push the file to git
+========================
+git push -u origin master
+
+Next if any changes are made to existing file then only
+
+Commit and push commands are required.

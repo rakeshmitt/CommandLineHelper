@@ -9,9 +9,17 @@ clonning a repository
 =====================
 git clone <<repository url>>
 
-adding new file to repository
+adding new specific file to repository
 ============================
 git add <<file name>>
+
+adding all the newly added files
+==================================
+git add -A
+
+or 
+
+git add -u
 
 verify the status
 ================
@@ -25,6 +33,47 @@ Now push the file to git
 ========================
 git push -u origin master
 
-Next if any changes are made to existing file then only
+Next if any changes are made to existing file then only Commit and push commands are required.
 
-Commit and push commands are required.
+Checking the status of a branch
+===============================
+>> git branch
+
+checkout a branch
+====================
+>> git checkout <<branchname>>
+
+Creating a new local branch
+=========================
+
+git checkout -b <branch name>
+
+push newly created local branch to remote
+========================================
+git push origin <branch>
+
+safe delete a branch
+====================
+git branch -d <branch>
+
+force delete a branch
+=====================
+git branch -D <branch>
+
+push the delete branch to remote
+=======================================
+git push origin --delete <branch>
+or
+git push origin :<branch>
+
+rename the current branch
+=========================
+git branch -m <<new branch name>>
+
+
+
+
+Pushing a newly created  repository locally to remote
+====================================================
+git remote add origin <<remote git server url>>
+git push origin master
